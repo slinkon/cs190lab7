@@ -38,6 +38,9 @@ def mult(a, b):
 def div(a, b):
     return a / b
 
+def mod(a, b):
+	return a % b
+
 
 # -------------------------------------------------------- #
 
@@ -76,7 +79,9 @@ while (True):
 	elif (op == "**"):
 	    print "Exponent: ", exp(a, b)
 	
-	else:
+	elif (op == "%"):
+            print "Remainder: ", mod(a, b)
+        else:
             print "Invalid operation..."
 
     q = raw_input("Quit? [y/n] ")
